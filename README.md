@@ -41,6 +41,12 @@ rm -rf tmpdir
 tee output.txt  0.01s user 0.16s system 0% cpu 19:55.51 total
 ```
 
+Note: If some string generates *a lot* of output lines can be restricted to 200 chars via
+
+```
+cut -c -200 output.txt > shortened-list.txt 
+```
+
 ## Credits
 
 - Ola

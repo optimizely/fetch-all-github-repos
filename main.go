@@ -65,8 +65,8 @@ func main() {
 		fmt.Printf("repo number: %d - %s\n", j, gitRepo)
 		command := "git clone --depth 1 " + gitRepo + " tmpdir"
 		runCommand(command, false)
-		runCommand("ag eslint-scope tmpdir", true)
-		runCommand("ag eslint-config-eslint tmpdir", true)
+		runCommand("ag flatmap-stream tmpdir", true)
+		runCommand("ag package.json tmpdir", true)
 		runCommand("rm -rf tmpdir", false)
 	}
 }
